@@ -57,10 +57,12 @@ public class ExcelUtils {
     public static void main(String[] args) throws IOException {
 		
     	ExcelUtils exl = new ExcelUtils();
-    	exl.readExcelData("Data");
+//    	exl.readExcelData("Data");
     	
-//    	ArrayList al = new ArrayList(exl.readExcelData("Data"));
-//    	al.get(0);
+    	ArrayList al = new ArrayList(exl.readExcelData("Data"));
+    	System.out.println("");
+    	System.out.println(al.get(0));
+    	System.out.println(al.get(1));
     	
     	
    

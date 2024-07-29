@@ -6,18 +6,18 @@ public class ArraySort {
 		// TODO Auto-generated method stub
 		
 		
-		int[] a ={5,4,1,8,3,9};
+		int[] arr ={2, 4, 12, 3, 14, 34, 23};
 
 		
-		for (int i=0;i<a.length-1;i++){
+		for (int i=0;i<arr.length-1;i++){
 			
-			for (int j=0;j<a.length-1;j++) {
+			for (int j=0;j<arr.length-1;j++) {
 			
-			if(a[j] > a[j+1]) {
+			if(arr[j] > arr[j+1]) {
 				
-				int temp = a[j];
-				a[j]=a[j+1];
-				a[j+1]=temp;
+				int temp = arr[j];
+				arr[j]=arr[j+1];
+				arr[j+1]=temp;
 				
 			}
 	
@@ -25,9 +25,9 @@ public class ArraySort {
 		}
 		
 		
-		for (int sort: a) {
+		for (int sort: arr) {
 			
-			System.out.print(sort+ " ");
+			System.out.print(sort+ ",");
 		}
 	}
 
