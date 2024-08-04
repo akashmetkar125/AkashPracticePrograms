@@ -32,7 +32,9 @@ public class GetAllDropDownOptions {
     	
     	System.out.println(list.getText());
     }
- driver.quit();
+    
+   sel.selectByIndex(1);
+   driver.quit();
 
 	}
 

@@ -11,6 +11,9 @@ public class BasicProgram {
 		System.out.println("Akash"+10*20);
 
 		
+		System.out.println(10 + 20 + 30 + "Javatpoint");    
+        System.out.println(30 +"Javatpoint" + 10 + 20);   
+		
 		
 
 		
