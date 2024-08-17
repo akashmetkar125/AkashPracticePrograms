@@ -16,7 +16,7 @@ public class HashMapExample {
 		for (Map.Entry<String,String> entry : map.entrySet()) {
 			
 //			System.out.println(entry.getKey() + " " + entry.getValue());			
-		System.out.println("Key= " +entry.getKey() + " Value= " +entry.getValue());
+		System.out.println("Key= " +entry.getKey() + " & Value= " +entry.getValue());
 		
 			}
 		

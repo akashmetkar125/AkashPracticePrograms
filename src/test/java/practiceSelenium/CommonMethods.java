@@ -24,6 +24,15 @@ public class CommonMethods {
 		
 		Actions act = new Actions(driver);
 		act.clickAndHold(ele).moveToElement(ele1).release().build().perform();
+		
+	}
+	
+	public static void DragDropByOffsetDist(WebDriver driver,WebElement ele) {
+		
+		Actions act = new Actions(driver);
+		act.dragAndDropBy(ele, 0, 0);
+		
+		
 	}
 
 }

@@ -6,7 +6,7 @@ public class StringPalindrome {
 		// TODO Auto-generated method stub
 		
 	//	System.out.println(isPalindrome("madam"));
-		String string ="raceca";
+		String string ="racecar";
 		
 		if(isPalindrome(string)) {
 			System.out.println("String is Palindrome");
@@ -24,9 +24,7 @@ public class StringPalindrome {
 		int right=string.length()-1;
 		
 		while(left<right) {
-			
-			
-			
+						
 		if(string.charAt(left)!=string.charAt(right)){
 			
 			return false;

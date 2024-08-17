@@ -36,6 +36,13 @@ public class ArrayListExample {
 		
 		}
 		
+		System.out.println("Reversed Vector elements");
+        for (int i=al.size()-1;i>=0;i--) {
+			
+    			System.out.println(al.get(i));
+		
+		}
+		
 		for (Object a : al) {
 			System.out.println(a);
 			

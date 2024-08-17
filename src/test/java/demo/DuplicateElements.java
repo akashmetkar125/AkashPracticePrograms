@@ -9,14 +9,14 @@ public class DuplicateElements {
 		
 		int length = arr.length;
 		System.out.println(length);
-		
+		System.out.println("Below no's are duplicate");
 		for (int i=0;i<arr.length;i++) {
 			
 			for (int j=i+1;j<arr.length;j++) {
 				
 				if(arr[i]==arr[j]) {
 					
-				System.out.println(" Dupliacte elements found " + arr[i]);
+				System.out.print(arr[i]+ " ");
 				}
 			}
 			

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practiceSelenium.LoginBaseClass">
+      <class name="task.BrokenLinks">
         <methods>
-          <include name="launchUrl"/>
+          <include name="initialise"/>
+          <include name="BrokenLinkTest"/>
           <include name="tearDown"/>
-          <include name="UrlValidate"/>
         </methods>
-      </class> <!-- practiceSelenium.LoginBaseClass -->
+      </class> <!-- task.BrokenLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

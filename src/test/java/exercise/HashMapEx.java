@@ -1,13 +1,14 @@
 package exercise;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapEx {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		HashMap map = new HashMap();
+		HashMap<Integer, String> map = new HashMap();
 		map.put(0, "Akash");
 		map.put(1, "Metkar");
 		
@@ -20,6 +21,21 @@ public class HashMapEx {
 		
 		System.out.println(map.isEmpty());
 		System.out.println(map.size());
+		
+		for (Map.Entry<Integer,String> entry : map.entrySet()) {
+			
+		System.out.println("Key: " +entry.getKey() +" Value: "+ entry.getValue());
+			
+			
+		}
+		
+		System.out.println("");
+		for(Object key : map.keySet()) {
+			
+		 System.out.println(key+ " : " + map.get(key));
+			
+			
+		}
 
 
 	}

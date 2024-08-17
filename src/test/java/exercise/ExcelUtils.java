@@ -63,8 +63,28 @@ public class ExcelUtils {
     	System.out.println("");
     	System.out.println(al.get(0));
     	System.out.println(al.get(1));
+    	System.out.println(al.size());
+    	System.out.println(al.contains("Akash, Metkar"));
+    	System.out.println(al.isEmpty());
+    	
+    	Iterator itr =al.iterator();
+    	while(itr.hasNext()) {
+    		
+    		System.out.println(itr.next());
+    	}
+    	
+    	for (int i=0;i<al.size();i++) {
+    		
+    		String name=al.get(i).toString();
+        	System.out.println(name);
+        	String[] name1=name.split(",");
+        	System.out.println(name1[0]);
+        	System.out.println(name1[1]);
+    		
+    	}
     	
     	
+  
    
 	}
 

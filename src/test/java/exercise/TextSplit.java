@@ -7,12 +7,16 @@ public class TextSplit {
 		
 		
 		String text="Please use this password to login 'Akashm@789'";
-		
-//		String str = "geekss@for@geekss";
-//        String[] arrOfStr = str.split("@", 2);
-//
-//        for (String a : arrOfStr)
-//            System.out.println(a);
+	
+		String str = "geekss@for@geekss";
+        String[] arrOfStr = str.split("@", 2);
+        
+        System.out.println(arrOfStr[0]);
+        System.out.println(arrOfStr[1]);
+
+        //alternate way to print splited string
+        for (String a : arrOfStr)
+            System.out.println(a);
 		
 		
 	String[] text1 = 	text.split("'", 2);

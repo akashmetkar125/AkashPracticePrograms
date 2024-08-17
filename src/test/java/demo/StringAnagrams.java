@@ -1,18 +1,24 @@
 package demo;
 
+import org.openqa.selenium.InvalidArgumentException;
 import org.testng.reporters.AbstractXmlReporter.Count;
 
 public class StringAnagrams {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
-		System.out.println(isAnagram("aab", "aaa"));
+		System.out.println(isAnagram("aab", "aab"));
 		
 	}
 
-	private static boolean isAnagram(String str, String str2) {
+	private static boolean isAnagram(String str, String str2) throws Exception {
 		// TODO Auto-generated method stub
+		
+		if(str.length()!=str2.length()) {
+			
+			throw new InvalidArgumentException("Length of two strings should be same for checking string Anagram");
+		}
 		
 		int[] Count = new int[256];
 		
