@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class Login {
 
 	@Test(dataProvider="getData")
-	public void test(String username,String pass) throws InterruptedException {
+	public void TestWithDataProvider(String username,String pass) throws InterruptedException {
 		
 		
     WebDriver driver =	LaunchUrlChromeDriver.launchUrl("https://webdriveruniversity.com/Login-Portal/index.html");

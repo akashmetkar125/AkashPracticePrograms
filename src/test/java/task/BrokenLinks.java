@@ -37,6 +37,7 @@ public class BrokenLinks {
 		public void BrokenLinkTest() throws MalformedURLException, IOException {
 			
 			List<WebElement> links=driver.findElements(By.xpath("//li[@class='gf-li']//a"));
+			SoftAssert softassert = new SoftAssert();
 			for (WebElement link :links) {
 				
 				String url=link.getAttribute("href");
@@ -47,13 +48,11 @@ public class BrokenLinks {
 				
 				int statusCode =conn.getResponseCode();
 				System.out.println("Status Code of the link: '" +link.getText() +"' is "  +statusCode);
+								
+				softassert.assertTrue(statusCode<400, "Link: '"+link.getText() +"' is broken with status code "  +statusCode); 
 				
-				SoftAssert softassert = new SoftAssert();
-				
-				softassert.assertTrue(statusCode>404, "Link: '"+link.getText() +"' is broken with status code "  +statusCode); 
-			
-			
 		}
+			softassert.assertAll();	
 						
 		}
 		

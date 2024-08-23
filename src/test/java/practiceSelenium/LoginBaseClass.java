@@ -52,7 +52,7 @@ public class LoginBaseClass{
 	}
 	
 	@Test(priority=1)
-	public void UrlValidate() {
+	public void UrlValidateTest() {
 		
 		String actUrl=driver.getCurrentUrl();
 		System.out.println(actUrl);
