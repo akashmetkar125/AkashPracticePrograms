@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.RetryAnalyzer;
 
 public class BrokenLinks {
 	
@@ -33,7 +34,7 @@ public class BrokenLinks {
 		
 		
 	}
-		@Test
+		@Test(retryAnalyzer =RetryAnalyzer.class )
 		public void BrokenLinkTest() throws MalformedURLException, IOException {
 			
 			List<WebElement> links=driver.findElements(By.xpath("//li[@class='gf-li']//a"));

@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.RetryAnalyzer;
 
 public class ActionsPractice extends CommonMethods {
 	
@@ -31,7 +32,7 @@ public class ActionsPractice extends CommonMethods {
 	}	
 		
 		
-		@Test(priority=1)
+		@Test(priority=1,retryAnalyzer =RetryAnalyzer.class )
 		public void DragTest() throws InterruptedException {
 				
 		WebElement ele=driver.findElement(By.xpath("//div[@id='draggable']"));
@@ -50,7 +51,7 @@ public class ActionsPractice extends CommonMethods {
 		
 		}
 		
-		@Test(priority=2)
+		@Test(priority=2,retryAnalyzer =RetryAnalyzer.class )
 		public void Hover() throws InterruptedException {
 		WebElement hover1 =driver.findElement(By.xpath("//button[@class='dropbtn']"));
 		WebElement hover2 =driver.findElement(By.xpath("//button[text()='Hover Over Me Second!']"));

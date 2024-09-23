@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.RetryAnalyzer;
 public class LoginBaseClass{
 	
 	  static WebDriver driver;
@@ -27,7 +28,7 @@ public class LoginBaseClass{
 	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	   
 	}
-	@Test(priority=0)
+	@Test(priority=0,retryAnalyzer =RetryAnalyzer.class )
 	public void testLogin() throws InterruptedException {
 		
 		
@@ -51,12 +52,13 @@ public class LoginBaseClass{
 		
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,retryAnalyzer =RetryAnalyzer.class )
 	public void UrlValidateTest() {
 		
 		String actUrl=driver.getCurrentUrl();
 		System.out.println(actUrl);
 		assertEquals(actUrl, "https://webdriveruniversity.com/Login-Portal/index.html");
+	
 		
 	
 	}

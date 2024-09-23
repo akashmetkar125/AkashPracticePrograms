@@ -6,10 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import utils.RetryAnalyzer;
+
 
 public class Login {
 
-	@Test(dataProvider="getData")
+	@Test(dataProvider="getData",retryAnalyzer =RetryAnalyzer.class )
 	public void TestWithDataProvider(String username,String pass) throws InterruptedException {
 		
 		
