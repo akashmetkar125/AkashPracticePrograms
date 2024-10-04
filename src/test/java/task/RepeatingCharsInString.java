@@ -32,7 +32,7 @@ public class RepeatingCharsInString {
 
 	        // Print the count of each vowel.
 	        for (Map.Entry<Character, Integer> entry : vowelCount.entrySet()) {
-	            System.out.print(entry.getKey() + "" + entry.getValue());
+	            System.out.print(entry.getKey() + "" + entry.getValue() +" ");
 	        }
 	    }
 	}

@@ -15,8 +15,8 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 	    if (retryCount < maxRetryCount) {
             retryCount++;
             return true;
-        }
-		return false;
-	}
-
+	    }
+	    return false;
+ 
+	}	
 }

@@ -23,12 +23,13 @@ public class UniqueNumInArray {
 				
 				if(a[i]==a[j]) {
 					k++;
+					
 				}	
 				
 			}
-			System.out.println(a[i]+ ":" +k);
-//			if(k==1) 
-//				System.out.println(a[i] +" is unique number in Array");		
+//			System.out.println(a[i]+ ":" +k);
+			if(k==1) 
+				System.out.println(a[i] +" is unique number in Array");		
 		}
 		}
 	}

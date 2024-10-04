@@ -44,7 +44,7 @@ public class Listeners implements ITestListener {
 	public void onTestFailure(ITestResult result,WebDriver driver) {
 		// TODO Auto-generated method stub
 		test.log(Status.FAIL, "Test Failed");
-
+		
         // Capture screenshot on failure
         driver = (WebDriver) result.getTestContext().getAttribute("WebDriver");
         String screenshotPath = takeScreenshot(result.getMethod().getMethodName(), driver);
